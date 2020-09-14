@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+
+            <div class="row">
+                <app-product-card *ngFor="let prod of searchservice.searchedProducts " [prod]='prod'>
+                </app-product-card>
+            </div>
+        </div>
+    </div>
+</div>

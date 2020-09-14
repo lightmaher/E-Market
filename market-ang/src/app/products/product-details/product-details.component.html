@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-5 ">
+            <img [src]="createImgPath(product.url)" alt="profile picture" width="350" height="400" class=" border border-info rounded">
+            <h1 class="mt-4  " style="font-size: 70px;">
+                <strong>{{product.name}}</strong>
+            </h1>
+
+        </div>
+        <div class="col-7">
+            <h1 style="font-size: 50px;" class="mt-4"> About Product </h1>
+            <p style="font-size: 30px;">{{product.describtion}}</p>
+            <div>
+                <h1 class="mt-4" style="font-size: 30px;">
+                    <strong> Price : </strong> {{product.price}}
+                </h1>
+                <button (click)="additemtobasket()" class="btn btn-outline-primary w-50">
+                    Add To Cart
+               </button>
+                <button class="btn btn-light btn-xl ml-2" [routerLink]="['/products']">
+                Back To Products 
+           </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <img [src]="createImgPath(product.url)" alt="profile picture" style="width:300px; height:200px;" class="mt-2">
+<h1>{{product.name}} </h1>
+
+<h3>{{product.price}}</h3>
+<button class="btn btn-light" [routerLink]="['/products']"> back to products </button> -->
